@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import './title.css'
 
 class Title extends Component {
@@ -9,4 +10,6 @@ class Title extends Component {
 
 }
 
-export default Title
+export default connect(state => ({
+    countriesList: state.countriesList
+}), {})(Title)

@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { changeFilter } from '../../../actions'
 import './search.css'
 
 class Search extends Component {
@@ -6,7 +8,7 @@ class Search extends Component {
     change = e => {
         const text = e.target.value
 
-        this.props.change(text)
+        this.props.changeFilter(text)
     }
 
     render() {
@@ -20,4 +22,5 @@ class Search extends Component {
 
 }
 
-export default Search
+export default connect(state => ({
+}), { changeFilter })(Search)

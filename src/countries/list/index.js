@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import ListItem from './listItem'
 import './list.css'
 
@@ -21,4 +22,7 @@ class List extends Component {
 
 }
 
-export default List
+export default connect(state => ({
+    countriesList: state.countriesList,
+    text: state.filterText
+}), {})(List)

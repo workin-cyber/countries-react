@@ -7,8 +7,8 @@ class Header extends Component {
 
     render() {
         return <header>
-            <Title {...this.props}/>
-            <Search change={this.props.change}/>
+            <Title />
+            <Search />
         </header>
     }
 
