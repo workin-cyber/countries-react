@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
-import countriesList from './countriesList'
-import filterText from './filterText'
+import products from './products'
 
 const allReducers = combineReducers({
-    countriesList,
-    filterText
+    products  
+
+    
 })
 
 export default allReducers
