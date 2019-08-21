@@ -1,0 +1,6 @@
+.productsList{
+    width: 800px;
+    max-width: calc(100% - 20px);
+    margin: auto;
+    display: flex;
+}

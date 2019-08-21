@@ -1,0 +1,27 @@
+.cartItem{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
+.cartItem .name{
+    width: calc(100% - 120px);
+    display: block;
+}
+
+.cartItem img{
+    width: 50px;
+}
+
+.cart button{
+    cursor: pointer;
+    background-color: #2196f3;
+    border: 0;
+    color: white;
+    margin: 3px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}

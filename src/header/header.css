@@ -1,0 +1,24 @@
+header {
+    background-color: white;
+}
+
+header .content {
+    height: 50px;
+    width: 800px;
+    max-width: calc(100% - 20px);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .headerCart {
+    position: relative;
+}
+
+header .adminModeBtn{
+    cursor: pointer;
+}
+header .adminModeBtn:hover{
+    text-decoration: underline;
+}

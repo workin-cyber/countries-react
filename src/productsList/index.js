@@ -1,14 +1,8 @@
 import React, { Component } from 'react'
 import { fetchProducts } from '../actions'
 import { connect } from 'react-redux'
-
-class Product extends Component {
-
-    render() {
-        return <div>{this.props.name}</div>
-    }
-
-}
+import Product from '../product'
+import './products.css'
 
 class ProductsList extends Component {
 
@@ -19,7 +13,7 @@ class ProductsList extends Component {
     render() {
         const { products = [] } = this.props
 
-        return <div>{
+        return <div className='productsList'>{
             products.map(prod => <Product key={prod.name} {...prod} />)
         }</div>
 
