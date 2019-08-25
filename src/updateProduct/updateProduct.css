@@ -1,0 +1,7 @@
+.updateProduct {}
+
+.updateProduct label {
+    display: block;
+    width: 70px;
+    margin-top: 7px;
+}

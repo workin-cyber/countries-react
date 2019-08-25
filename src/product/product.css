@@ -6,6 +6,7 @@
 }
 
 .product button {
+    cursor: pointer;
     background: #2196F3;
     border: none;
     width: 100%;
