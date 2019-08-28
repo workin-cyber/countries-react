@@ -19,7 +19,7 @@ class Login extends Component {
             password: password.value
         }
         console.log(loginObj)
-        axios.post('http://localhost:1200/login', loginObj)
+        axios.post('https://fullstack-store.herokuapp.com/login', loginObj)
             .then(res => {
                 if (res.data.error)
                     this.setState({ error: res.data.error })

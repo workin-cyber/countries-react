@@ -23,7 +23,7 @@ class UpdateProduct extends Component {
             image: image.value,
         }
         console.log(product, newProduct)
-        axios.put('http://localhost:1200/products', newProduct)
+        axios.put('https://fullstack-store.herokuapp.com/products', newProduct)
             .then(res => {
                 window.location.reload()
             })
