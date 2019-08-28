@@ -1,0 +1,11 @@
+.login label {
+    display: block;
+    width: 100px;
+    margin-top: 7px;
+}
+
+.login .error{
+    color:red;
+    text-align: center;
+    font-size: 14px;
+}

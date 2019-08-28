@@ -1,7 +1,9 @@
 header {
     background-color: white;
 }
-
+header .loginBtn{
+    cursor: pointer;
+}
 header .content {
     height: 50px;
     width: 800px;
